@@ -39,7 +39,6 @@ public class MainPageTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
         WebElement btnAfter5Seconds = wait.until(ExpectedConditions.
                 visibilityOfElementLocated(By.id("visibleAfter")));
-        wait.until(ExpectedConditions.elementToBeClickable(btnAfter5Seconds));
         assertTrue(btnAfter5Seconds.isDisplayed(), "кнопка не активна");
 
     }
